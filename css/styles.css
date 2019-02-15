@@ -1,0 +1,14 @@
+.header{
+  font-style: italic;
+  font-size: 20px;
+  font-family: serif;
+  text-align: center;
+  color: pink;
+  position: relative;
+  top = 200px;
+  border-style: solid;
+  border-width: thin;
+  border-color: pink;
+  border-radius: 12px;
+
+}
