@@ -4,8 +4,6 @@
   font-family: serif;
   text-align: center;
   color: pink;
-  position: relative;
-  top = 200px;
   border-style: solid;
   border-width: thin;
   border-color: pink;
@@ -13,10 +11,33 @@
   width = 200px;
 }
 #dimension {
-  width: 400px;
+  width: 40%;
   display: block;
   margin-bottom: 40px;
   background-color: pink;
   padding: 30px;
   border-radius: 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-style: italic;
+  border: none;
+}
+.inputs {
+  margin:auto;
+  position:relative;
+  left: 300px;
+  top: 50px;
+}
+.button {
+  background-color: pink;
+  border: none;
+  text-align: center;
+  position: relative;
+  left:100px;
+  width: 20%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+
+
 }
