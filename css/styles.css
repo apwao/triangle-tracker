@@ -10,17 +10,18 @@
   border-radius: 15px;
   width = 200px;
 }
-#dimension {
+.sides {
   width: 40%;
   display: block;
   margin-bottom: 40px;
   background-color: pink;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 30px;
   font-size: 15px;
   font-weight: bolder;
   font-style: italic;
   border: none;
+  text-align: center;
 }
 .inputs {
   margin:auto;
@@ -29,7 +30,7 @@
   top: 50px;
 }
 .button {
-  background-color: pink;
+  background-color: skyblue;
   border: none;
   text-align: center;
   position: relative;
@@ -38,6 +39,8 @@
   padding: 20px;
   font-size: 20px;
   font-weight: bolder;
+  border-radius: 20px;
+
 
 
 }
