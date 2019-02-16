@@ -13,3 +13,7 @@ alert("Dimensions cannot form a triangle");
 else if(firstDimension === secondDimension && secondDimension === thirdDimension){
 	alert("The dimensions form an equilateral Triangle");
 }
+//Check for a scalene triangle
+else if(firstDimension !== secondDimension && secondDimension !== thirdDimension && firstDimension !== thirdDimension){
+	alert("The dimensions form a scalene triangle");
+}
