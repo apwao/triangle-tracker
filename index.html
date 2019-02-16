@@ -15,11 +15,11 @@
     <!-- Create form for inputting triangle dimensions-->
     <div class ="inputs">
       <form action = "index.html" class = "dimensions" onsubmit="return validateinput()">
-        <input class = "sides" type ="number" id = "firstDimension" placeholder="First Dimension">
+        <input class = "sides" type ="number" id = "firstDimension" placeholder="First Dimension" name="sideA">
         <p class = "error"></p>
-        <input class ="sides" type ="number" id ="secondDimension" placeholder ="Second Dimension">
+        <input class = "sides" type ="number" id ="secondDimension" placeholder ="Second Dimension" name="sideB">
         <p class = "error"></p>
-        <input class ="sides" type ="number" id ="thirdDimension" placeholder ="Third Dimension">
+        <input class = "sides" type ="number" id ="thirdDimension" placeholder ="Third Dimension" name="sideC">
         <p class = "error"></p>
         <!--Create a submit button-->
         <button class="button" type = "button">Submit Dimensions</button>
