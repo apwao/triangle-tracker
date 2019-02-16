@@ -17,3 +17,12 @@ else if(firstDimension === secondDimension && secondDimension === thirdDimension
 else if(firstDimension !== secondDimension && secondDimension !== thirdDimension && firstDimension !== thirdDimension){
 	alert("The dimensions form a scalene triangle");
 }
+else if(firstDimension === secondDimension &&  secondDimension != thirdDimension){
+alert("The dimensions form an isoceles triangle");
+}
+else if(secondDimension === thirdDimension &&  thirdDimension != firstDimension){
+alert("The dimensions form an isoceles triangle");
+}
+else {thirdDimension === firstDimension &&  firstDimension != secondDimension
+alert("The dimensions form an isoceles triangle");}
+}
