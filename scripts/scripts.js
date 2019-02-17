@@ -1,35 +1,36 @@
-//Obtain form element from document
-let myForm = document.forms.checkerForm;
-//Obtain error message elements
-let errorMessage = document.getElementsByClassName("error");
-//Obtain input from user
-function triangleCheck(){
-// Obtain the three Dimensions
+'use strict';
+function myFunction(){
+// Obtain the three Dimensions from user
 let firstDimension = parseInt(document.getElementById("dimension1").value);
 let secondDimension = parseInt(document.getElementById("dimension2").value);
 let thirdDimension = parseInt(document.getElementById("dimension3").value);
+
+triangleCheck(firstDimension, secondDimension, thirdDimension);
 }
+function triangleCheck(sideA, sideB, sideC){
 //Discard dimensions that cannot form a triangle
-if ((firstDimension + secondDimension) === thirdDimension || (secondDimension + thirdDimension) === firstDimension || (firstDimension + thirdDimension) === secondDimension){
+if ((sideA + sideB) === sideC || (sideB + sideC) === sideA || (sideA + sideC) === sideB){
 	alert("Dimensions cannot form a triangle");
 }
-else if((firstDimension + thirdDimension) < secondDimension || (firstDimension + secondDimension) < thirdDimension || (secondDimension + thirdDimension) < firstDimension){
+else if((sideA + sideC) < sideB || (sideA + sideB) < sideC || (sideB + sideC) < sideA){
 alert("Dimensions cannot form a triangle");
 }
 //Check for an equilateral triangle
-else if(firstDimension === secondDimension && secondDimension === thirdDimension){
+else if(sideA === sideB && sideB === sideC){
 	alert("The dimensions form an equilateral Triangle");
 }
 //Check for a scalene triangle
-else if(firstDimension !== secondDimension && secondDimension !== thirdDimension && firstDimension !== thirdDimension){
+else if(sideA !== sideB && sideB !== sideC && sideA !== sideC){
 	alert("The dimensions form a scalene triangle");
 }
-else if(firstDimension === secondDimension &&  secondDimension != thirdDimension){
+//Check for isoceles
+else if(sideA === sideB &&  sideB != sideC){
 alert("The dimensions form an isoceles triangle");
 }
-else if(secondDimension === thirdDimension &&  thirdDimension != firstDimension){
+else if(sideB === sideC &&  sideC != sideA){
 alert("The dimensions form an isoceles triangle");
 }
-else {thirdDimension === firstDimension &&  firstDimension != secondDimension
-alert("The dimensions form an isoceles triangle");}
+else if(sideC === sideA &&  sideA != sideB){
+alert("The dimensions form an isoceles triangle");
+}
 }
