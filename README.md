@@ -11,6 +11,7 @@ The web page can be viewed on GitHub pages at: https://apwao.github.io/triangle-
 * Open the files using a web browser of your choice.
 * Internet connection is required to access the links therein.
 ## BDD
+![](images/bdd.png)
 ## Known Bugs
 {After submitting values input fields may fail to clear}
 ## Technologies Used
