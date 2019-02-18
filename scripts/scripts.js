@@ -1,4 +1,3 @@
-'use strict';
 function myFunction(){
 // Obtain the three Dimensions from user
 let firstDimension = parseInt(document.getElementById("dimension1").value);
